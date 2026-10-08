@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 8%;
+  background: #07111f;
+  color: white;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+
+.home-text {
+  max-width: 600px;
+  animation: slideLeft 1s ease;
+}
+
+.welcome {
+  color: #8ed8ff;
+  letter-spacing: 4px;
+  font-size: 14px;
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 50px 0;
+  animation: slideUp 1.2s ease;
+  color: rgb(194, 192, 192);
+}
+
+h1 span {
+  color: #8ed8ff;
+}
+
+h2 {
+  font-size: 30px;
+  color: #c5d9e8;
+  animation: slideUp 1.5s ease;
+}
+
+/* ROLE ANIMATION */
+
+.role {
+  display: inline-block;
+  animation: roleGlow 2s infinite alternate;
+}
+
+/* DESCRIPTION */
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #b8c5d1;
+  animation: slideUp 1.8s ease;
+}
+
+/* BUTTONS */
+
+.buttons {
+  margin-top: 30px;
+  animation: slideUp 2s ease;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  margin-right: 15px;
+  border: 1px solid #8ed8ff;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #8ed8ff;
+  color: #07111f;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.buttons button:hover{
+  background: transparent;
+  color: #8ed8ff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #8ed8ff;
+}
+
+.resume_btn{
+    text-decoration: none;
+    color: black;
+    transform: translateY(-5px);
+}
+.resume_btn:hover{
+    color: #8ed8ff;
+    transform: translateY(-5px);
+}
+
+
+/* IMAGE */
+
+.home-image {
+  animation: imageEnter 1.5s ease;
+}
+
+.home-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #8ed8ff;
+
+  animation: floating 4s ease-in-out infinite;
+
+  box-shadow:
+    0 0 20px #8ed8ff,
+    0 0 50px rgba(142, 216, 255, 0.4);
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* PHOTO FLOATING */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* TEXT GLOW */
+
+@keyframes roleGlow {
+  from {
+    text-shadow: 0 0 5px #8ed8ff;
+  }
+
+  to {
+    text-shadow:
+      0 0 10px #8ed8ff,
+      0 0 25px #8ed8ff;
+  }
+}

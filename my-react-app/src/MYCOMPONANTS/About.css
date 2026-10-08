@@ -1,0 +1,302 @@
+.about {
+  padding: 70px 10%;
+  /* background: #f5f7ff; */
+ background: linear-gradient(125deg, rgb(255, 205, 213), #e8edff,rgb(255, 205, 213));
+  color: #222;
+}
+
+/* Common Heading */
+
+.about h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+h1{
+    color: black;
+}
+h2{
+    color: black;
+}
+.about h2 span,
+.about h1 span {
+  color: rgb(255, 95, 122);
+}
+
+
+/* About Intro */
+
+.about-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.about-small-title {
+  color: rgb(255, 95, 122);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.about-intro h1 {
+  font-size: 52px;
+  margin: 15px 0;
+}
+
+.about-description {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* Journey */
+
+.journey {
+  margin-top: -90px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.journey p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* Education */
+
+.education {
+  
+  padding: 60px 0;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.education-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.8s;
+}
+
+.education-box:hover {
+  background: rgb(255, 95, 122);
+  color: white;
+  transform: translateY(-8px);
+}
+
+.education-box p {
+  color: #666;
+}
+
+.education-box:hover p {
+  color: white;
+}
+
+.education-box span {
+  color: rgb(255, 95, 122);
+}
+
+.education-box:hover span {
+  color: white;
+}
+
+
+/* Skills */
+
+.skills {
+  margin-top: -80px;
+  padding: 60px 0;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-box {
+  padding: 15px 30px;
+  background: white;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  /* background: rgb(255, 95, 122); */
+  transform: translateY(-5px);
+  border-bottom: 8px solid rgb(255, 95, 122);
+  transition: 0.3s;
+}
+
+
+/* What I Do */
+
+.what-i-do {
+    margin-top: -80px;
+  padding: 60px 0;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  background: linear-gradient(135deg, rgb(255, 95, 122),rgb(232, 146, 161));
+  color: white;
+  transform: translateY(-8px);
+  transition: 0.8s;
+}
+
+.service-box p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.service-box:hover p {
+  color: white;
+}
+
+
+/* Projects */
+
+.projects {
+     margin-top: -60px;
+  padding: 60px 0;
+  text-align: center;
+   transition: 0.8s;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.8s;
+}
+
+.project-box:hover {
+  background: linear-gradient(135deg, rgb(255, 95, 122),rgb(232, 146, 161));
+  color: white;
+  transform: translateY(-8px);
+  transition: 0.8s;
+}
+
+.project-box p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.project-box:hover p {
+  color: white;
+}
+
+
+/* Goals */
+
+.goals {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.goals p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.resume-btn {
+  padding: 13px 28px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(255, 144, 162);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  background: rgb(255, 95, 122);
+  transition: 0.8s;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .education-container {
+    grid-template-columns: repeat(2, 1fr);
+    transition: 0.8s;
+  }
+
+  .service-container,
+  .project-container {
+    grid-template-columns: 1fr;
+    transition: 0.8s;
+  }
+
+  .about-intro h1 {
+    font-size: 40px;
+    transition: 0.8s;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .education-container {
+    grid-template-columns: 1fr;
+    transition: 0.8s;
+  }
+
+  .about {
+    padding: 50px 5%;
+    transition: 0.8s;
+  }
+
+  .about h2 {
+    font-size: 30px;
+    transition: 0.8s;
+  }
+}

@@ -1,0 +1,41 @@
+.navbar1 {
+    position: fixed;
+    top: 12px;
+    z-index: 1000;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid gray;   
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(90%, 900px); 
+
+}
+.navbar1 h2 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+    transition: color 0.8s ease;
+}
+.navbar1 h2:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 95, 122);
+    transition: color 0.5s ease;
+}
+.nav-body{
+    display: flex;
+    gap: 20px;
+}
+.navbar1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.navbar1 a:hover {
+    color: rgb(255, 95, 122);
+    transition: color 0.3s ease;
+}
