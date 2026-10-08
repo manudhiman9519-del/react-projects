@@ -158,7 +158,7 @@
 // export default App;
 
 
-//Hooks = it is a special function jo react ke functional compoents me extra features use krne dete h
+//Hooks = it is a special function jo react ke functional compoents me extra features use krne dete h. ex - useState,useEffect,useContext,useRef,useMemo,useCallback.
 
 //import React, { useState } from 'react';
 import { useState } from "react";         
